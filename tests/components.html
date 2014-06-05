@@ -28,7 +28,7 @@
       <div class="container">
         <div class="navbar-header">
           <a href="../" class="navbar-brand">Bootswatch</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -809,6 +809,30 @@
           </div>
         </form>
 
+        <div class="bs-callout bs-callout-warning">
+            <h4>Icons, labels, and input groups</h4>
+            <p>Manual positioning of feedback icons is required for inputs without a label and for <a href="../components#input-groups">input groups</a> with an add-on on the right. For inputs without labels, adjust the <code>top</code>value. For input groups, adjust the <code>right</code> value to an appropriate pixel value depending on the width of your addon.</p>
+          </div>
+
+        <div class="bs-example">
+            <form role="form">
+              <div class="form-group has-success has-feedback">
+                <label class="control-label" for="inputSuccess2">Input with success</label>
+                <input type="text" class="form-control" id="inputSuccess2">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+              </div>
+              <div class="form-group has-warning has-feedback">
+                <label class="control-label" for="inputWarning2">Input with warning</label>
+                <input type="text" class="form-control" id="inputWarning2">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+              </div>
+              <div class="form-group has-error has-feedback">
+                <label class="control-label" for="inputError2">Input with error</label>
+                <input type="text" class="form-control" id="inputError2">
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+              </div>
+            </form>
+          </div>
 
         <h2 id="forms-control-sizes">Control sizing</h2>
         <p>Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
@@ -1762,7 +1786,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="#">Link <span class="badge">3</span></a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -1818,7 +1842,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="#">Link <span class="badge">3</span></a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -2256,6 +2280,13 @@
         <div class="bs-callout bs-callout-danger">
           <h4>Cross-browser compatibility</h4>
           <p>Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.</p>
+        </div>
+
+        <h3 id="progress-basic">With Label</h3>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            60%
+          </div>
         </div>
 
         <h3 id="progress-basic">Basic</h3>
